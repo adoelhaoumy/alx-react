@@ -1,7 +1,24 @@
+<<<<<<< HEAD
 .App-footer {
   font-size: 1rem;
   padding: 1.2rem;
   text-align: center;
   font-style: italic;
   border-top: 3px solid #e0354b;
+=======
+
+lberton-red: #e1484c;
+}
+
+.App-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.App-footer p {
+    text-align: center;
+    border-top: 3px solid var(--holberton-red);
+    padding: 16px 0;
+>>>>>>> c79235b532e20913fbb7b173a242caaa514aa5e4
 }

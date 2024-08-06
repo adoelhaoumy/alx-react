@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .App-body {
   font-size: 1rem;
   padding: 2em;
@@ -6,4 +7,16 @@
 
 form input {
   margin: 10px;
+=======
+
+lberton-red: #e1484c;
+}
+
+.App-body {
+    padding: 36px 24px;
+}
+
+.App-body input {
+    margin: 0 16px 0 8px;
+>>>>>>> c79235b532e20913fbb7b173a242caaa514aa5e4
 }

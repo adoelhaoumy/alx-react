@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .App-header {
   font-size: 1.4rem;
   color: #e0354b;
@@ -9,4 +10,25 @@
 .App-header img {
   width: 200px;
   height: 200px;
+=======
+
+lberton-red: #e1484c;
+}
+
+.App-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    border-bottom: 3px solid var(--holberton-red);
+    margin-top: 30px;
+}
+
+.App-header img {
+    width: 150px;
+}
+
+.App-header h1 {
+    margin: auto auto auto 0;
+    color: var(--holberton-red);
+>>>>>>> c79235b532e20913fbb7b173a242caaa514aa5e4
 }

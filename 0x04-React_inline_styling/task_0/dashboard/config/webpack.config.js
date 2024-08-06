@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
@@ -9,12 +10,46 @@ module.exports = {
   module: {
     rules: [
       {
+=======
+t path = require("path");
+
+module.exports = {
+  mode: "development",
+  devtool: "inline-source-map",
+  entry: "./src/index.js",
+  output: {
+    filename: "bundle.js",
+    path: path.resolve("./dist"),
+  },
+  devServer: {
+    hot: true,
+    contentBase: path.resolve("./dist"),
+    compress: true,
+    port: 8564,
+  },
+  performance: {
+    maxAssetSize: 1000000,
+    maxEntrypointSize: 1000000,
+  },
+  module: {
+    rules: [
+      {
+        test: /\.(js|jsx)$/,
+        exclude: /node_modules/,
+        loader: "babel-loader",
+      },
+      {
+>>>>>>> c79235b532e20913fbb7b173a242caaa514aa5e4
         test: /\.css$/i,
         use: ["style-loader", "css-loader"],
       },
       {
+<<<<<<< HEAD
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         // type: 'asset/resource',
+=======
+        test: /\.(gif|png|jpe?g|svg)$/i,
+>>>>>>> c79235b532e20913fbb7b173a242caaa514aa5e4
         use: [
           "file-loader",
           {
@@ -26,6 +61,7 @@ module.exports = {
           },
         ],
       },
+<<<<<<< HEAD
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
@@ -51,4 +87,8 @@ module.exports = {
       template: "./dist/index.html",
     }),
   ],
+=======
+    ],
+  },
+>>>>>>> c79235b532e20913fbb7b173a242caaa514aa5e4
 };
