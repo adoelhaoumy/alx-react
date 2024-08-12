@@ -43,4 +43,4 @@ describe("onclick event behaves as it should", () => {
     expect(spy).toBeCalledWith(1);
     spy.mockRestore();
   });
-});
+}) ;
